@@ -1,0 +1,131 @@
+@charset "UTF-8"; /* 文字コードの指定 */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=PT+Serif:wght@400;700&family=Poppins:wght@400;600&display=swap'); /* Google Fonts用のCSSを読み込み */
+
+#wrap { /*横スクロール消去*/
+  overflow: hidden;
+}
+
+.sp_right {
+  display: none;
+}
+.sp_left {
+  display: none;
+}
+
+#title {
+  width:1440px;
+  display: flex;
+  justify-content: space-around;
+}
+  #explain {
+    display: flex;
+    flex-direction: column;
+  }
+
+    .title {
+      width: 450px;
+      font-family: PT serif;
+      font-weight: 700;
+      font-size: 47.7px;
+      color: black;
+      margin: 110px 0px 173px 200px;
+    }
+
+      .first {
+        width: 117px;
+        font-family: Poppins;
+        font-weight: 600;
+        font-size: 18px;
+        color: black;
+        margin: 110px 587px 10px 0px;
+      }
+
+      .second{
+        width: 439px;
+        font-family: Poppins;
+        font-weight: 400;
+        font-size: 18px;
+        color: black;
+        margin: 0px 265px 96px 0px;
+      }
+
+.third{ /*氏名*/
+  font-family: Poppins;
+  font-weight: 600;
+  font-size: 18px;
+  color: black;
+  margin-top: 15px;
+}
+
+.fourth{ /*役職*/
+  font-family: PT Serif;
+  font-weight: 400;
+  font-size: 12px;
+  color: black;
+  writing-mode: vertical-rl; /*縦書きにする*/
+  text-orientation: sideways; /*英数字の向きを縦にする*/
+  margin-left: 10px;
+}
+
+.fifth{ /*フッター細字*/
+  font-family: Montserrat;
+  font-weight: 500;
+  font-size: 14px;
+  color: #A9A9A9;
+  /*margin: 0px, 265px, 1255px, 0px;*/
+}
+
+.sixth{ /*フッター太字*/
+  font-family: Montserrat;
+  font-weight: 700;
+  font-size: 18px;
+  color: #A9A9A9;
+  /*margin: 0px, 265px, 1255px, 0px;*/
+}
+
+.name img {
+  width: 238px
+}
+
+.pc_upper {
+  margin-left: 200px;
+  margin-right: 200px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.pc_under {
+  margin-left: 200px;
+  margin-right: 200px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 6px;
+}
+
+.person-1  {
+  display:flex;
+  flex-direction: row;
+}
+
+.person-2  {
+  display:flex;
+  flex-direction: row;
+  padding-top: 100px;
+}
+
+.name {
+  display:flex;
+  flex-direction: column;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 115px;
+  margin-bottom: 5px;
+}
+
+/*メディアクエリ（モバイル指定の場合）*/
+@media screen and (max-width: 375px) {
+}
